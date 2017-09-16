@@ -43,9 +43,11 @@ var dog = {
   age: 10, 
   vegeterian: true, 
   color: ["brown", "white"], 
-  speak: "bark!"
+  speak: function(){
+    return "bark!";
+  }
 };
- console.log("My dog " + dog.name + " is " + dog.age + " years old and likes to " + dog.speak);
+ console.log("My dog " + dog.name + " is " + dog.age + " years old and likes to " + dog.speak());
 
 
 //An empty object
@@ -62,7 +64,16 @@ var dog = {
   Console.log the object.
 */
 
+var kicks = {};
+kicks.brand = "Adidas";
+kicks.color = "red";
+kicks.size = 7.5;
 
+function shoes(sale){
+  sale.buy = "Hell Yeah!";
+  return sale;
+}
+console.log(shoes(kicks));
 /* 
 
 4. Declare a variable named `plainBox` and set its value to be an EMPTY object.
