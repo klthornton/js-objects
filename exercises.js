@@ -98,7 +98,14 @@ console.log(shoes(kicks));
             - add a key named `passengers` and set it to be an empty array.
 */
 
-
+var stockCar = {
+  model: "Toyota",
+  year: 2005,
+  automaticTransmission: true,
+  driver: null,
+  passengers: []
+}
+console.log(stockCar);
 /*
 
 6. Add new property inside a function
