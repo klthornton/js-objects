@@ -244,9 +244,14 @@ var sumObj = {};
   sumObj.b = 2, 
   sumObj.result = undefined;
 
-function objectAddition(){
-
+function objectAddition(object){
+  object.result = object.a + object.b;
+  return object;
 }
+var sumObjResult = objectAddition(sumObj);
+console.log(sumObjResult);
+console.log
+
 /*
 9. Print sum function and add as new key-value
    Declare a new function named printObj and a single parameter which will be the object from the challenge just above. 
@@ -264,6 +269,18 @@ function objectAddition(){
         **create more** objects and invoke your function multiple times.
  */
 
+ var sumObj = {};
+  sumObj.a = 4,
+  sumObj.b = 5, 
+  sumObj.output = undefined;
+
+function printObj(object){
+  object.output = object.a + object.b;
+  return object;
+}
+var sumObjOutput = printObj(sumObj);
+console.log(sumObjOutput);
+console.log(sumObj.a + " + " + sumObj.b + " = " + sumObj.output);
 
 /*
 10. Putting stuff in `plainBox`
