@@ -213,15 +213,20 @@ var arrayOfObjects = [
   }
 ];
 
-  for (var i = 0; i<arrayOfObjects.length; i++){
-      console.log("id: " + arrayOfObjects[i].id);
-      console.log("purchase date: " + arrayOfObjects[i].date); 
-      console.log("purchase total: " + arrayOfObjects[i].total);
-      console.log("====="); 
+function printOrders(orders){
+ for (var i = 0; i<orders.length; i++){
+  console.log("id: " + orders[i].id);
+  console.log("purchase date: " + orders[i].date);
+  console.log("purchase total: " + orders[i].total);
+  console.log("=====");
+ }
+
 }
+printOrders(arrayOfObjects);
 
 
-//console.log(printOrders(arrayOfObjects));
+
+
 /*
 8. Addition with an object
    Declare a new variable named sumObj and set it to be a new object with the properties `a`, `b`, and `result`. 
@@ -234,8 +239,14 @@ var arrayOfObjects = [
         Invoke your function and pass in your object, store the result to a variable named sumObjResult and use `console.log` 
         to inspect your results.
 */
+var sumObj = {};
+  sumObj.a = 1,
+  sumObj.b = 2, 
+  sumObj.result = undefined;
 
+function objectAddition(){
 
+}
 /*
 9. Print sum function and add as new key-value
    Declare a new function named printObj and a single parameter which will be the object from the challenge just above. 
